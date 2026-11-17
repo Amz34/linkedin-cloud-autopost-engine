@@ -114,34 +114,53 @@
   <div class="card">
     <div class="badge">⚡ 7-Day Free Pilot</div>
     <h1>Claim Priority Setup</h1>
-    <p>Enter your email to receive the setup blueprint and connect instantly with Aamir Zameer on WhatsApp.</p>
+    <p>Enter your work email to connect instantly with Aamir Zameer on WhatsApp.</p>
 
-    <form id="simpleForm" action="https://formsubmit.co/azengineeringapp@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="⚡ New LinkedIn Cloud Engine Lead">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" id="nextUrl" value="https://wa.me/966582104381?text=Hi%20Aamir%21%20I%20just%20submitted%20my%20email%20for%20the%20LinkedIn%20Cloud%20Engine%207-Day%20Pilot.">
-
-      <input type="email" name="email" id="emailBox" placeholder="Enter your work email" required autofocus>
-      <button type="submit" class="btn">
+    <form id="connectForm">
+      <input type="email" id="emailBox" placeholder="Enter your work email" required autofocus>
+      <button type="submit" class="btn" id="submitBtn">
         <span>Continue to WhatsApp</span> 💬
       </button>
     </form>
 
     <div class="footer-note">
-      🔒 Zero spam • One-tap direct WhatsApp handoff
+      🔒 Instant 1-second direct WhatsApp handoff
     </div>
   </div>
 
   <script>
-    const form = document.getElementById('simpleForm');
+    const form = document.getElementById('connectForm');
     const emailBox = document.getElementById('emailBox');
-    const nextUrl = document.getElementById('nextUrl');
+    const submitBtn = document.getElementById('submitBtn');
 
-    form.addEventListener('submit', function() {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
       const email = emailBox.value.trim();
+      if (!email) return;
+
+      submitBtn.innerHTML = '<span>Redirecting...</span> ⚡';
+      submitBtn.style.opacity = '0.85';
+
+      // 1. Fire non-blocking background lead beacon to azengineeringapp@gmail.com
+      try {
+        const formData = new FormData();
+        formData.append('email', email);
+        formData.append('_subject', '⚡ New LinkedIn Cloud Engine Lead: ' + email);
+        formData.append('_captcha', 'false');
+        
+        fetch('https://formsubmit.co/ajax/azengineeringapp@gmail.com', {
+          method: 'POST',
+          body: formData,
+          mode: 'no-cors'
+        }).catch(() => {});
+      } catch (err) {}
+
+      // 2. Zero-delay instant redirect to WhatsApp
       const waMsg = `Hi Aamir! I just submitted my email (${email}) for the LinkedIn Cloud Engine 7-Day Free Pilot. Let's get started!`;
-      nextUrl.value = `https://wa.me/966582104381?text=${encodeURIComponent(waMsg)}`;
+      const targetUrl = `https://wa.me/966582104381?text=${encodeURIComponent(waMsg)}`;
+      
+      // Instant redirect without waiting for third-party email server response
+      window.location.href = targetUrl;
     });
   </script>
 </body>
