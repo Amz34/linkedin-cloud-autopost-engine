@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim 7-Day Free Pilot — LinkedIn Cloud Engine</title>
+  <link rel="icon" href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/26a1.svg">
+  <style>
+    :root {
+      --bg: #060b13;
+      --card-bg: #0f172a;
+      --border: #1e293b;
+      --accent: #38bdf8;
+      --green: #25d366;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      max-width: 520px;
+      width: 100%;
+      padding: 40px 32px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+    .glow {
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(0,0,0,0) 70%);
+      pointer-events: none;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(37, 211, 102, 0.15);
+      border: 1px solid rgba(37, 211, 102, 0.3);
+      color: var(--green);
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    p.desc {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #e2e8f0;
+    }
+    input, select {
+      width: 100%;
+      background: #090e17;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 13px 16px;
+      font-size: 15px;
+      color: #ffffff;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus {
+      border-color: var(--accent);
+    }
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(90deg, #0a66c2 0%, #25d366 100%);
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.25);
+      transition: transform 0.15s, opacity 0.15s;
+    }
+    .submit-btn:hover {
+      opacity: 0.95;
+      transform: translateY(-1px);
+    }
+    .trust-footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .success-overlay {
+      display: none;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .success-icon {
+      font-size: 54px;
+      margin-bottom: 16px;
+    }
+    .wa-redirect-btn {
+      display: inline-block;
+      background: #25d366;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 10px;
+      margin-top: 18px;
+      font-size: 15.5px;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="glow"></div>
+
+    <div id="formSection">
+      <div class="badge">🎁 7-Day Free Risk-Reversal Pilot</div>
+      <h1>Claim Priority Onboarding</h1>
+      <p class="desc">We'll deploy our autonomous cloud engine to publish 3 high-impact posts on your LinkedIn page or personal brand completely free.</p>
+
+      <form id="leadForm" action="https://formsubmit.co/azengineeringapp@gmail.com" method="POST">
+        <!-- Configuration fields -->
+        <input type="hidden" name="_subject" value="⚡ New LinkedIn Engine Lead (7-Day Free Pilot)">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <!-- Fallback next URL if js fails -->
+        <input type="hidden" name="_next" id="nextUrl" value="https://wa.me/966582104381?text=Hi%20Aamir%21%20I%20just%20submitted%20my%20details%20for%20the%20LinkedIn%20Cloud%20Engine%207-Day%20Free%20Pilot.">
+
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" name="name" id="nameInput" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label>Work Email (For Post Approvals)</label>
+          <input type="email" name="email" id="emailInput" placeholder="e.g. john@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>LinkedIn Page or Profile URL</label>
+          <input type="url" name="linkedin_url" id="linkedinInput" placeholder="https://linkedin.com/in/... or /company/..." required>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">Submit & Continue to WhatsApp 💬</button>
+      </form>
+
+      <div class="trust-footer">
+        <span>🛡️ No credit card required • Zero password sharing</span>
+        <span>Author: Aamir Zameer • Cloud Engine Architecture</span>
+      </div>
+    </div>
+
+    <!-- Success / Direct WhatsApp State -->
+    <div id="successSection" class="success-overlay">
+      <div class="success-icon">🚀</div>
+      <h2>Details Received!</h2>
+      <p class="desc" style="margin-top: 8px;">Your request has been routed to <strong>azengineeringapp@gmail.com</strong>.<br>Redirecting you to WhatsApp with Aamir Zameer...</p>
+      <a id="waDirectBtn" href="https://wa.me/966582104381?text=Hi%20Aamir%21%20I%20just%20submitted%20my%20details%20for%20the%20LinkedIn%20Cloud%20Engine%207-Day%20Free%20Pilot." class="wa-redirect-btn">
+        Open WhatsApp Now 💬
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('leadForm');
+    const formSection = document.getElementById('formSection');
+    const successSection = document.getElementById('successSection');
+    const waDirectBtn = document.getElementById('waDirectBtn');
+
+    form.addEventListener('submit', function(e) {
+      const name = document.getElementById('nameInput').value.trim();
+      const email = document.getElementById('emailInput').value.trim();
+      const li = document.getElementById('linkedinInput').value.trim();
+
+      const customMsg = `Hi Aamir! I just submitted my details for the LinkedIn Cloud Engine 7-Day Free Pilot.\n\n👤 Name: ${name}\n📧 Email: ${email}\n🔗 LinkedIn: ${li}`;
+      const waUrl = `https://wa.me/966582104381?text=${encodeURIComponent(customMsg)}`;
+
+      document.getElementById('nextUrl').value = waUrl;
+      waDirectBtn.href = waUrl;
+
+      // Allow default form submission to send email, then redirect to WhatsApp
+    });
+  </script>
+</body>
+</html>
