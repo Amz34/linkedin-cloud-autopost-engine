@@ -79,3 +79,7 @@ We offer a **Turnkey 24/7 Hosted Pipeline** managed entirely on our private clou
 
 To get your custom tenant provisioned or access the full implementation specs:
 👉 **Contact our engineering team or reply to our community thread for priority onboarding.**
+
+---
+
+Part of [my always-on agent stack](https://github.com/Amz34) · [Awesome Agent Infrastructure](https://github.com/Amz34/awesome-agent-infrastructure) (135 live-checked building blocks).
