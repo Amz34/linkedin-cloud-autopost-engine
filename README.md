@@ -8,6 +8,12 @@ An autonomous, 24/7 cloud-native publishing & auto-engagement mesh designed for 
 
 ---
 
+## 🏛 System Topology
+
+![LinkedIn Cloud Engine Architecture](assets/architecture-overview.svg)
+
+---
+
 ## ⚡ The Architecture at a Glance
 
 Most teams fail at LinkedIn automation because they run brittle local cron jobs on laptops or paste links inside post copy (which triggers an immediate 60% algorithmic downrank penalty).

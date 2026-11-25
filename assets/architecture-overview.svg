@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .box { fill: #161b22; stroke: #30363d; stroke-width: 1.5; rx: 8px; }
+      .box-highlight { fill: #161b22; stroke: #58a6ff; stroke-width: 2; rx: 8px; }
+      .title { fill: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; font-weight: 600; }
+      .label { fill: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 500; }
+      .subtext { fill: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; }
+      .code { fill: #79c0ff; font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; }
+      .arrow { stroke: #58a6ff; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .badge-green { fill: #238636; }
+      .badge-blue { fill: #1f6feb; }
+      .badge-purple { fill: #8957e5; }
+      .badge-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#58a6ff" />
+    </marker>
+  </defs>
+
+  <rect width="1000" height="480" class="bg" rx="12" />
+
+  <text x="40" y="45" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">LinkedIn Cloud Autopost Engine Architecture</text>
+  <text x="40" y="68" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Autonomous 24/7 Headless Publishing: UGC v2 Protocol, Anti-Truncation Gate, and 2-Thread Engagement Funnel</text>
+
+  <!-- Stage 1 -->
+  <g transform="translate(40, 100)">
+    <rect width="270" height="330" class="box" />
+    <rect x="15" y="15" width="70" height="18" rx="4" class="badge-blue" />
+    <text x="50" y="27" class="badge-text">STAGE 1</text>
+    <text x="15" y="55" class="title">Inbound Synthesis</text>
+    <text x="15" y="75" class="subtext">Idea &amp; Draft Processing</text>
+
+    <rect x="15" y="95" width="240" height="70" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="115" class="label">Multi-Channel Ingestion</text>
+    <text x="25" y="132" class="subtext">• Autonomous webhook listener</text>
+    <text x="25" y="147" class="subtext">• Voice note, audio, &amp; text notes</text>
+
+    <rect x="15" y="175" width="240" height="70" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="195" class="label">Mathematical Unicode Typography</text>
+    <text x="25" y="212" class="code">md2linkedin.format(markdown)</text>
+    <text x="25" y="227" class="subtext">• Converts bold/code to native Unicode</text>
+
+    <rect x="15" y="255" width="240" height="55" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="275" class="label">Zero Prompt Leaks</text>
+    <text x="25" y="292" class="subtext">• 100% human, authoritative voice</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 310 250 L 350 250" class="arrow" />
+
+  <!-- Stage 2 -->
+  <g transform="translate(360, 100)">
+    <rect width="280" height="330" class="box-highlight" />
+    <rect x="15" y="15" width="70" height="18" rx="4" class="badge-purple" />
+    <text x="50" y="27" class="badge-text">STAGE 2</text>
+    <text x="15" y="55" class="title">Anti-Truncation Gate</text>
+    <text x="15" y="75" class="subtext">Pre-Flight &amp; Self-Healing</text>
+
+    <rect x="15" y="95" width="250" height="75" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="115" class="label">Pre-Flight Validation Gate</text>
+    <text x="25" y="132" class="subtext">• Zero dangling conjunctions or ellipsis</text>
+    <text x="25" y="147" class="subtext">• Bracket parity &amp; 3-paragraph rule</text>
+
+    <rect x="15" y="180" width="250" height="75" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="200" class="label">Automated Verification Gate</text>
+    <text x="25" y="218" class="code">verify(landed_len == intended_len)</text>
+    <text x="25" y="235" class="subtext">• Immediate query of live public feed</text>
+
+    <rect x="15" y="265" width="250" height="45" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="285" class="label">Auto-Rollback on Breach</text>
+    <text x="25" y="298" class="subtext">• Instant deletion if truncation detected</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 640 250 L 680 250" class="arrow" />
+
+  <!-- Stage 3 -->
+  <g transform="translate(690, 100)">
+    <rect width="270" height="330" class="box" />
+    <rect x="15" y="15" width="70" height="18" rx="4" class="badge-green" />
+    <text x="50" y="27" class="badge-text">STAGE 3</text>
+    <text x="15" y="55" class="title">UGC v2 &amp; 2-Thread Funnel</text>
+    <text x="15" y="75" class="subtext">Maximum Algorithmic Reach</text>
+
+    <rect x="15" y="95" width="240" height="70" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="115" class="label">Zero External Links in Body</text>
+    <text x="25" y="132" class="subtext">• Avoids 60% algorithmic downrank</text>
+    <text x="25" y="147" class="subtext">• High-dwell-time technical narrative</text>
+
+    <rect x="15" y="175" width="240" height="70" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="195" class="label">2-Thread Comment Engine</text>
+    <text x="25" y="212" class="code">Thread 1: Link | Thread 2: Debate</text>
+    <text x="25" y="227" class="subtext">• Immediate automated comment injection</text>
+
+    <rect x="15" y="255" width="240" height="55" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="275" class="label">Cloud ARM64 Isolated Pod</text>
+    <text x="25" y="292" class="subtext">• 100% cloud-native 24/7 reliability</text>
+  </g>
+</svg>
